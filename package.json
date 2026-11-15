@@ -1,0 +1,16 @@
+{
+  "name": "approval-escalation",
+  "version": "0.1.0",
+  "description": "GitHub App that watches pending deployment approvals across an org's repos: reminds reviewers, escalates to a fallback team, optionally auto-rejects at a configured expiry, and posts a weekly digest.",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "sweep": "node src/sweep.js",
+    "digest": "node src/sweep.js digest",
+    "test": "node --test"
+  }
+}
